@@ -1,16 +1,16 @@
 "use client";
 
 import React from "react";
-import {z} from "zod";
-import {useForm} from "react-hook-form";
-import {zodResolver} from "@hookform/resolvers/zod";
-import {Form} from "@/components/ui/form";
-import {Button} from "@/components/ui/button";
+import { z } from "zod";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { Form } from "@/components/ui/form";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-import {toast} from "sonner";
+import { toast } from "sonner";
 import FormField from "@/components/FormField";
-import {useRouter} from "next/navigation";
+import { useRouter } from "next/navigation";
 
 const authFormSchema = (type: FormType) => {
     return z.object({
